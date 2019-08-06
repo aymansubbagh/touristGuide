@@ -21,6 +21,4 @@ class UserInfo(generics.RetrieveUpdateDestroyAPIView):
 				return Response(serializer.data, status = status.HTTP_201_CREATED)
 			return Response(serializer.error, status = status.HTTP_400_BAD_REQUEST)
 	
-	def unused(x):
-		return x
 	
